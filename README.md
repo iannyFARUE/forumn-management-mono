@@ -12,7 +12,7 @@ mvn clean install
 ```
 
 ## Practical Exercise 
-Convert the monolith into a multi module using bottom up migration stratedy
+Convert the monolith into a multi module using bottom up migration strategy
 
 Hints: split the project into 
 1. security core module (have the core apis only)

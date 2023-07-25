@@ -6,12 +6,15 @@ import za.co.entelect.persistence.repository.UserRepository;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 public class UserService {
 
     private final UserRepository userRepository;
 
     private final Scanner scanner;
+
+    private final Logger logger = Logger.getLogger(UserService.class.getName());
     public UserService(){
         userRepository = new UserRepository();
         scanner = new Scanner(System.in);

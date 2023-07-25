@@ -6,6 +6,7 @@ import za.co.entelect.security.core.Authentication;
 
 import java.util.List;
 import java.util.Scanner;
+import java.util.logging.Logger;
 import java.util.stream.IntStream;
 
 public class Main {
@@ -13,6 +14,8 @@ public class Main {
     private final AuthenticationService authenticationService;
     private final UserService userService;
     private Authentication authentication;
+
+    private final Logger logger = Logger.getLogger("Console");
 
     public Main(){
         authenticationService = new AuthenticationService();

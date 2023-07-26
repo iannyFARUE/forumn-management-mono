@@ -14,6 +14,10 @@ public class TaxService {
         taxBrackets = TaxLoader.LoadTaxBrackets();
     }
 
+    public double calculateYearlyTotalTax(String income){
+        return calculateYearlyTotalTax(Double.parseDouble(income));
+    }
+
     public double calculateYearlyTotalTax(double income){
 
         double currentAmount = income;
@@ -24,11 +28,13 @@ public class TaxService {
                 break;
             } else {
                 taxAmount += currentBracket.getThreshold() * (currentBracket.getTaxPercentage()/100);
-                currentAmount =- currentBracket.getThreshold();
+                currentAmount = currentAmount - currentBracket.getThreshold();
             }
         }
 
         return taxAmount;
     }
+
+
 
 }

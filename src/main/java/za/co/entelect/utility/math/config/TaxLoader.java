@@ -9,6 +9,7 @@ import java.util.List;
 public class TaxLoader {
     public static List<Bracket> LoadTaxBrackets() {
         List<Bracket> brackets = new ArrayList();
+        brackets.add(new Bracket(95750,0));
         brackets.add(new Bracket(237100,18));
         brackets.add(new Bracket(370500,26));
         brackets.add(new Bracket(512800,31));

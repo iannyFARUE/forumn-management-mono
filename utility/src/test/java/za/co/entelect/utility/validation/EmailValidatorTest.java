@@ -33,7 +33,7 @@ public class EmailValidatorTest {
     @Test
     public void emailV2ValidTest(){
         String email = "test@test.com";
-        EmailValidator.validateEmailV1(null);
+        EmailValidator.validateEmailV2(null);
     }
 
 }

@@ -13,7 +13,7 @@ mvn clean install
 
 ## Practical Exercise 
 ### Modules
-Convert the following mavan modules to java modules as well by adding module.info files
+Convert the following maven modules to java modules as well by adding module-info.java files
 
 1. security core module (have the core apis only)
 2. security-impl module

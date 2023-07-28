@@ -13,9 +13,8 @@ mvn clean install
 
 ## Practical Exercise 
 ### Modules
-Convert the monolith into a multi module using bottom up migration strategy
+Convert the following mavan modules to java modules as well by adding module.info files
 
-Hints: split the project into 
 1. security core module (have the core apis only)
 2. security-impl module
 3. api module
